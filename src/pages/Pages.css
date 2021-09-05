@@ -1,0 +1,135 @@
+.list-ordered-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ordered-product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    width: 70%;
+    margin:10px 0;
+    background: aliceblue;
+    padding: 0 15px;
+}
+.ord-item-img{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.ord-item-img img{
+    height: 80%;
+}
+.ordered-product span{
+    text-align: center;
+    padding:10px;
+    
+}
+.add-ord{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background-color: rgb(20, 55, 121);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.remove-ord{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background-color: rgb(136, 43, 43);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#basketForm{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+    background: aliceblue;
+    justify-content: center;
+}
+.label{
+    width: 45%;
+    margin:10px;
+}
+.label input{
+    width: 100%;
+    border:none;
+    outline: none;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.label select{
+    height: 35px;
+    width:100%;
+    border:none;
+    outline: none;
+    padding-left: 10px;
+}
+.sub-btn-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#orderd-sub-btn{
+    width:35%;
+    user-select: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 10px;
+    background: #2163a7;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+#prazan{
+    display: none;
+}
+.orderingNotice{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: cornsilk;
+    display: none;
+}
+.blockorderingNotice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 22px;
+    position: fixed;
+}
+
+@media screen and (max-width:700px){
+    .ordered-product{
+        width: 95%;
+    }
+    form{
+        width:95%;
+    }
+    .label {
+        width: 45%;
+        margin: 5px;
+    }
+    .ordered-product span{
+        font-size: 13px;
+        
+    }
+}

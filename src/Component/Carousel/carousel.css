@@ -1,0 +1,41 @@
+.carosel{
+    margin-top:80px;
+    margin-bottom: 80px;
+}
+.carouselItem{
+    padding:0 10px;
+}
+.itemC{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #68689e;
+    color: #fff;
+    margin: 0 15px;
+    font-size: 15px;
+    padding: 25px;
+}
+.itemC img{
+    width:70%;
+}
+.itemC a {
+    text-decoration: none;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media screen and (max-width:450px){
+    .itemC{
+        padding: 10px;
+    height: 250px;
+    text-align: center;
+    }
+}

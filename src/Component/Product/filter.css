@@ -1,0 +1,126 @@
+.filterLap img{
+    width: 60px;
+    cursor: pointer;
+    margin-left: 15px;
+    padding: 10px;
+    background: #557bc1;
+    border-radius: 50%;
+    box-shadow: 1px 2px 4px;
+}
+.filLap{
+    position: fixed;
+    top: 80px;
+    z-index: 4;
+}
+.filterLap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 310px;
+}
+.filterLap div{
+    color: white;
+    font-size: 35px;
+    font-weight: 800;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+
+.filterLap-background{
+    background: #252831;
+}
+.filter-part{
+    width: 330px;
+    transform: translate(0px);
+    transition: transform ease-out 0.5s;
+    position: absolute;
+    top: -25px;
+    background: #252831;
+    color: white;
+    padding: 15px;
+    padding-top: 100px;
+    z-index: -1;
+}
+.closeFilterPart{
+    width:330px;
+    position: absolute;
+    transform: translate(-330px);
+    transition: transform ease-in 0.30s;
+}
+.fil-brend{
+    margin-bottom: 10px;
+}
+.fil-price{
+    margin-bottom: 10px; 
+}
+.filter-span{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #5d5d5d;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+.filter-span div{
+    padding: 10px 15px;
+}
+.fil-brend input{
+    margin-right: 15px;
+}
+.filter-button{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:25px;
+}
+.filter-button button{
+    appearance: none;
+    user-select: none;
+    border:none;
+    outline:none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.filter-none{
+    display: none;
+}
+.filter-input{
+    padding-top: 10px;
+}
+.save-filter{
+    background-color: rgb(110, 150, 71);
+    font-size: 18px;
+    font-weight: 600;
+    color:white;
+}
+.reset-filter{
+    background-color: rgb(184, 43, 43);
+    font-size: 18px;
+    font-weight: 600;
+    color:white;
+}
+.marginlaptop{
+    margin-top:80px;
+}
+.filterIcon{
+display: block;
+}
+.noneFilterIcon{
+    display: none;
+}
+.noneCloseFilterLap{
+    display: none;
+}
+.blockCloseFilterLap{
+    display: block;
+    opacity: 1;
+    animation: blockFilterLap 0.70s alternate;
+}
+@keyframes blockFilterLap{
+    0%{opacity: 0;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}

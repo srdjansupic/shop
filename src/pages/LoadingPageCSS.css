@@ -1,0 +1,129 @@
+.main-div-gall{
+    height: 400px;
+    width: 400px;
+}
+.gallery-product{
+    margin-left: 15px;
+    width: 30%;
+    margin-right: 200px ;
+}
+.loading-page .div{
+    margin: 15px;
+    font-size: 25px;
+    font-weight: 800;
+}
+.img-gall{
+    width:100%;
+    display: flex;
+}
+.img-gall img{
+    width:25%;
+    margin: 10px;
+    cursor:pointer;
+}
+.borderImg{
+    border-bottom: 2px solid black;
+}
+.main-loading-page{
+    display: flex;
+    margin-bottom: 80px;
+}
+.carousel{
+    margin-bottom: 80px;
+}
+.description-product{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 82px;
+}
+.description-product span{
+    display: flex;
+}
+.description-product span h2{
+    font-size: 20px;
+    font-weight: 800;
+    margin-right: 5px;
+}
+.loading-page .price-div{
+    display: inline-block;
+}
+.price-menu-loading{
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading-page .savings-item{
+    padding: 10px 10px 10px 15px;
+}
+.add-remove{
+    display: flex;
+   
+}
+.qty-loading{
+    margin:0 20px;
+}
+.add-remove .add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-remove .remove{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addProduct-loadingP{
+    user-select: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 25px;
+    background-color: #505050;
+    border-radius: 10px;
+    color: honeydew;
+    text-transform: uppercase;
+}
+.qty-loading span h2{
+    margin-left: 5px;
+}
+
+
+@media screen and (max-width:1000px){
+    .main-loading-page{
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery-product{
+        margin: 0;
+        width: 95%;
+    }
+    .img-gall{
+        width: 75%;
+    }
+    .description-product{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .description-product span h2{
+        font-size: 15px;
+    }
+    .price-menu-loading{
+        height: 190px;
+        flex-wrap: wrap;
+    }
+    .price-menu-loading .price-item {
+        padding: 1px 10px 3px 5px;
+    }
+    .description-product{
+        margin-top: 45px;
+    }
+    .addProduct-loadingP{
+        padding: 10px 45px;
+         font-size: 20px;
+    }
+}
